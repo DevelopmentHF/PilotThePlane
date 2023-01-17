@@ -39,14 +39,14 @@ function scene:create( event )
 	sceneGroup:insert(uiGroup)
 
 	-- Add background to scene
-	local background = display.newImageRect(bgGroup, "assets/flappy-bird-assets/sprites/background-day.png", 1080, 1920)
+	local background = display.newImageRect(bgGroup, "Assets/background-day.png", 1080, 1920)
 	background.x = display.contentCenterX
 	background.y = display.contentCenterY
 
 	-- Load title text to use
-	local titleTextTop = display.newText(uiGroup, "Pilot", display.contentCenterX, 150, "assets/flappy-bird-assets/PressStart2P-Regular.ttf", 120)
-	local titleTextBot = display.newText(uiGroup, "The", display.contentCenterX, 250, "assets/flappy-bird-assets/PressStart2P-Regular.ttf", 80)
-	local titleTextBot = display.newText(uiGroup, "Plane", display.contentCenterX, 350, "assets/flappy-bird-assets/PressStart2P-Regular.ttf", 120)
+	local titleTextTop = display.newText(uiGroup, "Pilot", display.contentCenterX, 150, "Assets/PressStart2P-Regular.ttf", 120)
+	local titleTextBot = display.newText(uiGroup, "The", display.contentCenterX, 250, "Assets/PressStart2P-Regular.ttf", 80)
+	local titleTextBot = display.newText(uiGroup, "Plane", display.contentCenterX, 350, "Assets/PressStart2P-Regular.ttf", 120)
 
 	-- Adds big play button 
 	playButton = widget.newButton(
@@ -54,7 +54,7 @@ function scene:create( event )
 			textOnly = true,
 			onEvent = gotoGame,
 			label = "PLAY",
-			font = "assets/flappy-bird-assets/PressStart2P-Regular.ttf",
+			font = "Assets/PressStart2P-Regular.ttf",
 			fontSize = 200,
 			labelColor = {default={0,0,0}, over={1,1,1,0.5}}
 		}
@@ -66,7 +66,7 @@ function scene:create( event )
 	playButton.y = display.contentCenterY + 50
 
 	-- Load in plane asset for fun animation
-	plane = display.newImageRect(bgGroup, "assets/flappy-bird-assets/sprites/plane.png", 255, 165)
+	plane = display.newImageRect(bgGroup, "Assets/plane.png", 255, 165)
     plane.x = -150
     plane.y = display.contentCenterY - 200
 

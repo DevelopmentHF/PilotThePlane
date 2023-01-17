@@ -76,12 +76,12 @@ function scene:create( event )
 	sceneGroup:insert(uiGroup)
 
 	-- Add background to scene
-	local background = display.newImageRect(backGroup, "assets/flappy-bird-assets/sprites/background-day.png", 1080, 1920)
+	local background = display.newImageRect(backGroup, "Assets/background-day.png", 1080, 1920)
 	background.x = display.contentCenterX
 	background.y = display.contentCenterY
 
 	-- Load plane
-	plane = display.newImageRect(mainGroup, "assets/flappy-bird-assets/sprites/plane.png", 255, 165)
+	plane = display.newImageRect(mainGroup, "Assets/plane.png", 255, 165)
 	plane.x = display.contentCenterX - 250
 	plane.y = display.contentCenterY
 	physics.addBody(plane, {radius=125, isSensor=false}) -- Do want bouncing off tubes
