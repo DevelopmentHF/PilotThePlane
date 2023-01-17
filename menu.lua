@@ -65,7 +65,7 @@ function scene:create( event )
 	playButton.x = display.contentCenterX
 	playButton.y = display.contentCenterY + 50
 
-	-- Load in plane asset for fun animation
+	-- Load in plane asset for animation
 	plane = display.newImageRect(bgGroup, "Assets/plane.png", 255, 165)
     plane.x = -150
     plane.y = display.contentCenterY - 200
